@@ -2,7 +2,7 @@
 
 @section('conteudo')
 
-<h1>Primeiro Exemplo Usando Laragon</h1>
+<h1>Primeiro Exercício - Soma</h1>
 <form method="post" action="/resposta">
 @CSRF
 <div class="mb-3">

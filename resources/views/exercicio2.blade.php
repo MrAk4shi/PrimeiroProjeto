@@ -2,7 +2,7 @@
 
 @section('conteudo')
 
-<h1>Exercício 2</h1>
+<h1>Segundo Exercício - Subtração</h1>
 <form method="post" action="/resposta2">    
     @CSRF
     <div class="mb-3">
