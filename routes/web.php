@@ -21,3 +21,7 @@ Route::post('/resposta2', [ExercicioController::class, 'calcularSub']);
 //ex3
 Route::get('/exercicio3', [ExercicioController::class, 'exibirFormulario3']);
 Route::post('/resposta3', [ExercicioController::class, 'calcularMult']); 
+
+//ex4
+Route::get('/exercicio4', [ExercicioController::class, 'exibirFormulario4']);
+Route::post('/resposta4', [ExercicioController::class, 'calcularDiv']); 
