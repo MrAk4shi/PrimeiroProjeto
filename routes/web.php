@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use illuminate\Http\Request;
+use Illuminate\Http\Request;
 use App\Http\Controllers\ExercicioController;
 
 
@@ -17,3 +17,7 @@ Route::post('/resposta', [ExercicioController::class, 'calcularSoma']);
 Route::get('/exercicio2', [ExercicioController::class, 'exibirFormulario2']);
 //Rota para receber os dados do formulário do exercício 2
 Route::post('/resposta2', [ExercicioController::class, 'calcularSub']);
+
+//ex3
+Route::get('/exercicio3', [ExercicioController::class, 'exibirFormulario3']);
+Route::post('/resposta3', [ExercicioController::class, 'calcularMult']); 
