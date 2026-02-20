@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use illuminate\Http\Request;
+use Illuminate\Http\Request;
 
 class ExercicioController extends Controller {
 
