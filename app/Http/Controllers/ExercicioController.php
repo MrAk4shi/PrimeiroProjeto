@@ -169,5 +169,22 @@ public function calcularPotencia(Request $request){
 
     return view('exercicio12', ['resultado' => $resultado]);
 }
+
+//ex13
+public function exibirFormulario13(){
+    return view('exercicio13');
+}
+
+public function converterCm(Request $request){
+    $metros = $request->input('metros');
+
+    $cm = $metros * 100;
+
+    return view('exercicio13', ['cm' => $cm]);
+}
+
+
+
+
 }
 
