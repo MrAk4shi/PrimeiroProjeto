@@ -156,5 +156,18 @@ public function calcularPerimetroCirculo(Request $request){
     return view('exercicio11', ['perimetro' => $perimetro]);
 }
 
+//ex12
+public function exibirFormulario12(){
+    return view('exercicio12');
+}
+
+public function calcularPotencia(Request $request){
+    $base = $request->input('base');
+    $expoente = $request->input('expoente');
+
+    $resultado = pow($base, $expoente);
+
+    return view('exercicio12', ['resultado' => $resultado]);
+}
 }
 
