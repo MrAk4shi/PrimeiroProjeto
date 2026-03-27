@@ -276,5 +276,23 @@ public function converterTempo(Request $request){
     ]);
 }
 
+//ex20
+public function exibirFormulario20(){
+    return view('exercicio20');
+}
+
+public function calcularVelocidade(Request $request){
+    $distancia = $request->input('distancia');
+    $tempo = $request->input('tempo');
+
+    if ($tempo != 0) {
+        $velocidade = $distancia / $tempo;
+
+        return view('exercicio20', ['velocidade' => $velocidade]);
+    } else {
+        return('O tempo não pode ser zero');
+    }
+}
+
 }
 
