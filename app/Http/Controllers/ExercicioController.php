@@ -88,5 +88,46 @@ public function calcularTemperatura(Request $request){
 
     return view('exercicio6', ['fahrenheit' => $fahrenheit]);
 }
+
+//ex7
+public function exibirFormulario7(){
+    return view('exercicio7');
+}
+
+public function calcularTemperaturaF(Request $request){
+    $fahrenheit = $request->input('fahrenheit');
+
+    $celsius = ($fahrenheit - 32) * 5/9;
+
+    return view('exercicio7', ['celsius' => $celsius]);
+}
+
+//ex8
+public function exibirFormulario8(){
+    return view('exercicio8');
+}
+
+public function calcularAreaRet(Request $request){
+    $largura = $request->input('largura');
+    $altura = $request->input('altura');
+
+    $area = $largura * $altura;
+
+    return view('exercicio8', ['area' => $area]);
+}
+
+//ex9
+public function exibirFormulario9(){
+    return view('exercicio9');
+}
+
+public function calcularAreaCirculo(Request $request){
+    $raio = $request->input('raio');
+
+    $area = pi() * ($raio * $raio);
+
+    return view('exercicio9', ['area' => $area]);
+}
+
 }
 
