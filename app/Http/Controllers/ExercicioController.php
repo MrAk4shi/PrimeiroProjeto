@@ -129,5 +129,19 @@ public function calcularAreaCirculo(Request $request){
     return view('exercicio9', ['area' => $area]);
 }
 
+//ex10
+public function exibirFormulario10(){
+    return view('exercicio10');
+}
+
+public function calcularPerimetroRet(Request $request){
+    $largura = $request->input('largura');
+    $altura = $request->input('altura');
+
+    $perimetro = 2 * ($largura + $altura);
+
+    return view('exercicio10', ['perimetro' => $perimetro]);
+}
+
 }
 
