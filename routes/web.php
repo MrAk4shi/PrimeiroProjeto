@@ -33,3 +33,7 @@ Route::post('/resposta5', [ExercicioController::class, 'calcularMedia']);
 //ex6
 Route::get('/exercicio6', [ExercicioController::class, 'exibirFormulario6']);
 Route::post('/resposta6', [ExercicioController::class, 'calcularTemperatura']);
+
+//ex7
+Route::get('/exercicio7', [ExercicioController::class, 'exibirFormulario7']);
+Route::post('/resposta7', [ExercicioController::class, 'calcularTemperaturaF']);

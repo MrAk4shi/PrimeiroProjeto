@@ -88,5 +88,18 @@ public function calcularTemperatura(Request $request){
 
     return view('exercicio6', ['fahrenheit' => $fahrenheit]);
 }
+
+//ex7
+public function exibirFormulario7(){
+    return view('exercicio7');
+}
+
+public function calcularTemperaturaF(Request $request){
+    $fahrenheit = $request->input('fahrenheit');
+
+    $celsius = ($fahrenheit - 32) * 5/9;
+
+    return view('exercicio7', ['celsius' => $celsius]);
+}
 }
 
