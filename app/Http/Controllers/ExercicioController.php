@@ -143,5 +143,18 @@ public function calcularPerimetroRet(Request $request){
     return view('exercicio10', ['perimetro' => $perimetro]);
 }
 
+//ex11
+public function exibirFormulario11(){
+    return view('exercicio11');
+}
+
+public function calcularPerimetroCirculo(Request $request){
+    $raio = $request->input('raio');
+
+    $perimetro = 2 * pi() * $raio;
+
+    return view('exercicio11', ['perimetro' => $perimetro]);
+}
+
 }
 
