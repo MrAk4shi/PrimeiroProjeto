@@ -257,5 +257,24 @@ public function jurosCompostos(Request $request){
     return view('exercicio18', ['montante' => $montante]);
 }
 
+//ex19
+public function exibirFormulario19(){
+    return view('exercicio19');
+}
+
+public function converterTempo(Request $request){
+    $dias = $request->input('dias');
+
+    $horas = $dias * 24;
+    $minutos = $dias * 24 * 60;
+    $segundos = $dias * 24 * 60 * 60;
+
+    return view('exercicio19', [
+        'horas' => $horas,
+        'minutos' => $minutos,
+        'segundos' => $segundos
+    ]);
+}
+
 }
 
