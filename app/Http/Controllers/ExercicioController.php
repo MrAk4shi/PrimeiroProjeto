@@ -60,4 +60,33 @@ class ExercicioController extends Controller {
             return('Valor 2 igual a zero');
         }
     }
+
+    //ex5
+    public function exibirFormulario5(){
+        return view('exercicio5');
+    }
+
+    public function calcularMedia(Request $request){
+    $nota1 = $request->input('nota1');
+    $nota2 = $request->input('nota2');
+    $nota3 = $request->input('nota3');
+
+    $media = ($nota1 + $nota2 + $nota3) / 3;
+
+    return view('exercicio5', ['media' => $media]);
+    }
+
+    //ex6
+public function exibirFormulario6(){
+    return view('exercicio6');
 }
+
+public function calcularTemperatura(Request $request){
+    $celsius = $request->input('celsius');
+
+    $fahrenheit = ($celsius * 9/5) + 32;
+
+    return view('exercicio6', ['fahrenheit' => $fahrenheit]);
+}
+}
+

@@ -25,3 +25,11 @@ Route::post('/resposta3', [ExercicioController::class, 'calcularMult']);
 //ex4
 Route::get('/exercicio4', [ExercicioController::class, 'exibirFormulario4']);
 Route::post('/resposta4', [ExercicioController::class, 'calcularDiv']); 
+
+//ex5
+Route::get('/exercicio5', [ExercicioController::class, 'exibirFormulario5']);
+Route::post('/resposta5', [ExercicioController::class, 'calcularMedia']);
+
+//ex6
+Route::get('/exercicio6', [ExercicioController::class, 'exibirFormulario6']);
+Route::post('/resposta6', [ExercicioController::class, 'calcularTemperatura']);
