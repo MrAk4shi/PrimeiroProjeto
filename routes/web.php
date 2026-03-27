@@ -77,3 +77,7 @@ Route::post('/resposta16', [ExercicioController::class, 'calcularDesconto']);
 //ex17
 Route::get('/exercicio17', [ExercicioController::class, 'exibirFormulario17']);
 Route::post('/resposta17', [ExercicioController::class, 'jurosSimples']);
+
+//ex18
+Route::get('/exercicio18', [ExercicioController::class, 'exibirFormulario18']);
+Route::post('/resposta18', [ExercicioController::class, 'jurosCompostos']);

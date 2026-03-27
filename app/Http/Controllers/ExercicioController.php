@@ -242,5 +242,20 @@ public function jurosSimples(Request $request){
     return view('exercicio17', ['juros' => $juros]);
 }
 
+//ex18
+public function exibirFormulario18(){
+    return view('exercicio18');
+}
+
+public function jurosCompostos(Request $request){
+    $capital = $request->input('capital');
+    $taxa = $request->input('taxa');
+    $periodo = $request->input('periodo');
+
+    $montante = $capital * pow((1 + $taxa), $periodo);
+
+    return view('exercicio18', ['montante' => $montante]);
+}
+
 }
 
