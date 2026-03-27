@@ -61,3 +61,7 @@ Route::post('/resposta12', [ExercicioController::class, 'calcularPotencia']);
 //ex13
 Route::get('/exercicio13', [ExercicioController::class, 'exibirFormulario13']);
 Route::post('/resposta13', [ExercicioController::class, 'converterCm']);
+
+//ex14
+Route::get('/exercicio14', [ExercicioController::class, 'exibirFormulario14']);
+Route::post('/resposta14', [ExercicioController::class, 'converterMilhas']);

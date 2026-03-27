@@ -183,7 +183,18 @@ public function converterCm(Request $request){
     return view('exercicio13', ['cm' => $cm]);
 }
 
+//ex14
+public function exibirFormulario14(){
+    return view('exercicio14');
+}
 
+public function converterMilhas(Request $request){
+    $km = $request->input('km');
+
+    $milhas = $km * 0.621371;
+
+    return view('exercicio14', ['milhas' => $milhas]);
+}
 
 
 }
