@@ -227,5 +227,20 @@ public function calcularDesconto(Request $request){
     return view('exercicio16', ['valorFinal' => $valorFinal]);
 }
 
+//ex17
+public function exibirFormulario17(){
+    return view('exercicio17');
+}
+
+public function jurosSimples(Request $request){
+    $capital = $request->input('capital');
+    $taxa = $request->input('taxa');
+    $periodo = $request->input('periodo');
+
+    $juros = $capital * $taxa * $periodo;
+
+    return view('exercicio17', ['juros' => $juros]);
+}
+
 }
 

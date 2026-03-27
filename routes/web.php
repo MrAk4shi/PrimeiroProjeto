@@ -73,3 +73,7 @@ Route::post('/resposta15', [ExercicioController::class, 'calcularIMC']);
 //ex16
 Route::get('/exercicio16', [ExercicioController::class, 'exibirFormulario16']);
 Route::post('/resposta16', [ExercicioController::class, 'calcularDesconto']);
+
+//ex17
+Route::get('/exercicio17', [ExercicioController::class, 'exibirFormulario17']);
+Route::post('/resposta17', [ExercicioController::class, 'jurosSimples']);
