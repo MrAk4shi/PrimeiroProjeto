@@ -65,3 +65,11 @@ Route::post('/resposta13', [ExercicioController::class, 'converterCm']);
 //ex14
 Route::get('/exercicio14', [ExercicioController::class, 'exibirFormulario14']);
 Route::post('/resposta14', [ExercicioController::class, 'converterMilhas']);
+
+//ex15
+Route::get('/exercicio15', [ExercicioController::class, 'exibirFormulario15']);
+Route::post('/resposta15', [ExercicioController::class, 'calcularIMC']);
+
+//ex16
+Route::get('/exercicio16', [ExercicioController::class, 'exibirFormulario16']);
+Route::post('/resposta16', [ExercicioController::class, 'calcularDesconto']);

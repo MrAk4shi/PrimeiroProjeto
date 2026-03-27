@@ -196,6 +196,36 @@ public function converterMilhas(Request $request){
     return view('exercicio14', ['milhas' => $milhas]);
 }
 
+//ex15
+public function exibirFormulario15(){
+    return view('exercicio15');
+}
+
+public function calcularIMC(Request $request){
+    $peso = $request->input('peso');
+    $altura = $request->input('altura');
+
+    if ($altura != 0) {
+        $imc = $peso / ($altura * $altura);
+        return view('exercicio15', ['imc' => $imc]);
+    } else {
+        return "Altura não pode ser zero";
+    }
+}
+
+//ex16
+public function exibirFormulario16(){
+    return view('exercicio16');
+}
+
+public function calcularDesconto(Request $request){
+    $preco = $request->input('preco');
+    $desconto = $request->input('desconto');
+
+    $valorFinal = $preco - ($preco * ($desconto / 100));
+
+    return view('exercicio16', ['valorFinal' => $valorFinal]);
+}
 
 }
 
